@@ -1,6 +1,8 @@
 # IC|TC: Image Clustering Conditioned on Text Criteria
 *New methodology for performing image clustering based on user-specified criteria in the form of text by leveraging modern Vision-Language Models and Large Language Models.*
 
+## News
+
 ## Contents
 - [Install](#install)
 - [Dataset Prep](#dataset-prep)
