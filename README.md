@@ -111,28 +111,28 @@ Assuming the current directory is **~/ICTC**.
 #### **1. Obtain image description from VLM** (Step 1)
 Image descriptions will be saved in **'./{dataset}/initial_answer.jsonl'**.
 ```
-python llava/eval/model.py --dataset cifar10
+python step1/llava/eval/model.py --dataset cifar10
 or
-python blip2/model.py --dataset cifar10
+python step1/blip2/model.py --dataset cifar10
 ```
 
 #### **2. Obtain labels from VLM descriptions using LLM** (Step 2a)
 From the description of the image provided by VLM, ask LLM for a possible label.
 ```
-python ictc/llm_step2a.py --dataset cifar10
+python ictc/step2a.py --dataset cifar10
 ```
 To use GPT-4, enable **args.use_gpt4**. Or to use Llama-2, enable **args.llama**
 
 #### **3. Cluster possible labels to N labels using LLM** (Step 2b)
 Using the saved file containing initial labels, ask LLM to summarize them into K classes.
 ```
-python ictc/llm_step2b.py --dataset cifar10
+python ictc/step2b.py --dataset cifar10
 ```
 
 #### **4. Final classification(=clustering)** (Step 3)
-Now you obtained K(e.g., K=10) classes. Feed LLM with image description and a list of possible classes. Obtain the final classification.
+Now you obtained K classes. Feed LLM with image description and a list of possible classes. Obtain the final classification.
 ```
-python ictc/llm_step3.py --dataset cifar10
+python ictc/step3.py --dataset cifar10
 ```
 
 #### **5. Measuring acc, ari, nmi using the Hungarian Matching algorithm**
