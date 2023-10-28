@@ -1,4 +1,4 @@
-# IC$|$TC: Image Clustering Conditioned on Text Criteria
+# IC|TC: Image Clustering Conditioned on Text Criteria
 
 ## Contents
 - [Install](#install)
