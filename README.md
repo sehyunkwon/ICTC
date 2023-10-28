@@ -20,7 +20,7 @@
 <img src="./figures/fig1_instrument_7.png" alt="Sample images from the clustering results on the PPMI dataset. Clustering criterion is Instrument with cluster numbers K=2" width="700"/>
 </div>
 
-Sample images from clustering results of IC|TC. The method finds clusters consistent with the user-specified text criterion. Furthermore, the method provides cluster names (texts above each image cluster) along with the clusters, enhancing the interpretability of clustering results. (Figure 1 of the paper)
+Sample images from clustering results of IC|TC. The method finds clusters consistent with the user-specified text criterion. Furthermore, the method provides cluster names (texts above each image cluster) along with the clusters, enhancing the interpretability of clustering results.
 
 ## News
 
