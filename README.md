@@ -1,6 +1,11 @@
 # IC|TC: Image Clustering Conditioned on Text Criteria
 *New methodology for performing image clustering based on user-specified criteria in the form of text by leveraging modern Vision-Language Models and Large Language Models.*
 
+## News
+
+## Overview of ICTC
+#### Sample images from clustering results of IC|TC
+Sample images from clustering results of IC|TC. The method finds clusters consistent with the user-specified text criterion. Furthermore, the method provides cluster names (texts above each image cluster) along with the clusters, enhancing the interpretability of clustering results.
 <div align="center">
 <img src="./figures/fig1_action.png" alt="Sample images from the clustering results on the Stanford 40 Action dataset. Clustering criterion is Action" width="700"/>
 </div>
@@ -20,9 +25,14 @@
 <img src="./figures/fig1_instrument_7.png" alt="Sample images from the clustering results on the PPMI dataset. Clustering criterion is Instrument with cluster numbers K=2" width="700"/>
 </div>
 
-Sample images from clustering results of IC|TC. The method finds clusters consistent with the user-specified text criterion. Furthermore, the method provides cluster names (texts above each image cluster) along with the clusters, enhancing the interpretability of clustering results.
+#### Pipeline of ICTC
+IC|TC is very simple. All you need to do is input a text prompt reflecting the clustering criteria to the Vision Language Model (VLM) and Large Language Model (LLM) at each step.
 
-## News
+<div align="center">
+<img src="./figures/fig2_pipeline.png" alt="ICTC pipeline" width="700"/>
+</div>
+
+(Step 1) VLM extracts detailed relevant textual descriptions of images. (Step 2) LLM identifies the names of the clusters. (Step 3) LLM conducts clustering by assigning each description to the appropriate cluster. The entire procedure is guided by a user-specified text criterion ($\mathbf{TC}$). (Optional $\mathbf{TC}$ Refinement). The user can update the text criterion if the clustering results are unsatisfactory. 
 
 ## Contents
 - [Install](#install)
