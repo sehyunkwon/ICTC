@@ -1,0 +1,7 @@
+You will be given a description of the location. Your job is to determine where the location is that person exists based on the provided description. For example, given the following description. Please respond in the following format: "Answer: {location}".
+
+"""
+In the image, two young women are riding camels in the desert. They are sitting on the camels, which are carrying them across the sandy terrain. The women are wearing shorts and sandals, and they appear to be enjoying their ride. The camels are walking in the desert, and the background features a sandy landscape with some vegetation. This scene captures a moment of adventure and exploration in the desert, as the women experience the unique and exotic environment on the back of these animals.
+"""
+
+Then an exemplar answer would be "Answer: Desert"

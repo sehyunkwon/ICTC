@@ -1,0 +1,2 @@
+1: Outdoor
+2: Indoor

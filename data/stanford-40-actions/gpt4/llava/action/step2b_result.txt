@@ -1,0 +1,40 @@
+1: clapping
+2: taking a picture
+3: celebrating
+4: giving a speech
+5: waving
+6: performing on stage
+7: playing guitar
+8: taking a selfie
+9: smoking a cigarette
+10: throwing a frisbee
+11: blowing bubbles
+12: brushing teeth
+13: drinking coffee 
+14: using a computer 
+15: cleaning the floor 
+16: climbing 
+17: cooking 
+18: preparing food 
+19: cutting down a tree 
+20: gardening 
+21: drinking beverage 
+22: reading a book 
+23: using cell phone or laptop  
+24: interacting with horse  
+25: fishing  
+26: repairing bicycle  
+27: repairing car  
+28: walking in rain with umbrella  
+29: jumping   
+30: examining under microscope   
+31: observing through telescope   
+32: talking on phone   
+33: playing violin   
+34: pouring drink   
+35: pushing cart or stroller    
+36: riding bicycle or horse    
+37: studying or teaching    
+38: running or jogging    
+39: practicing archery    
+40: washing dishes or cleaning sink

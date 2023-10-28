@@ -1,0 +1,11 @@
+You will be provided a list of [__LEN__] objects and the number of occurences in a given dataset. Your job is to cluster [__LEN__] words into [__NUM_CLASSES_CLUSTER__] categories. Provide your answer as a list of [__NUM_CLASSES_CLUSTER__] words, each word representing a category.
+
+You must provide your answer in the following format "Answer {index}: {object}", where {index} is the index of the category and {object} is the object representing the category. For example, if you think the first category is "station", then you should provide your answer as "Answer 1: station".
+
+When categorizing classes, consider the following criteria:
+
+1. The sizes of each cluster should be similar. For instance, no cluster should have too many elements allocated, while certain clusters should not have too few elements assigned.
+2. Merge similar clusters. For example, [sparrow, eagle, falcon, owl, hawk] should be combined into a single cluster called 'birds of prey'.
+3. The cluster should be differentiated based on where the animals live.
+
+Please output a list of objects of length [__NUM_CLASSES_CLUSTER__], in the following format: "{index}: {object}". Make sure that you strictly follow the length condition, which means that {index} must range from 1 to [__NUM_CLASSES_CLUSTER__].

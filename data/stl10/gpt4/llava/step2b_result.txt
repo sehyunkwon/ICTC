@@ -1,0 +1,29 @@
+Answer 1: horse
+Reason 1: This category includes all objects related to horses and horse riding, such as 'horse', 'horses', 'carriage', 'foal', 'pony', etc.
+
+Answer 2: monkey
+Reason 2: This category includes all objects related to monkeys and their environment, such as 'monkey', 'baboon', 'monkeys', 'gorilla', etc.
+
+Answer 3: bird
+Reason 3: This category includes all objects related to birds and bird watching, such as 'bird', 'hummingbird', 'owl', etc.
+
+Answer 4: dog
+Reason 4: This category includes all objects related to dogs and dog care, such as 'dog', 'dogs','puppies' etc.
+
+Answer 5: airplane
+Reason 5: This category includes all objects related to airplanes and aviation, such as 'airplane','plane','airplanes','jet' etc.
+
+Answer 6: cat
+Reason 6: This category includes all objects related to cats and cat care, such as 'cat','kitten','cats' etc.
+
+Answer 7: deer
+Reason 7: This category includes all objects related to deers and their environment, such as 'deer','fawn' etc.
+
+Answer 8: truck
+Reason 8: This category includes all objects related to trucks and trucking industry, such as 'truck','semi-truck','dumptruck' etc.
+
+Answer 9: car
+Reason 9: This category includes all objects related to cars and car industry, such as 'car','cars','suv' etc.
+
+Answer 10: ship
+Reason10 :This category includes all objects related to ships and shipping industry, such as'ship','boat','sailboat'etc.

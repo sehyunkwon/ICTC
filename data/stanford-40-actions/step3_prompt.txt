@@ -1,0 +1,1 @@
+Please write the step 3 prompt here. The prompt we used in the paper is stored in /ICTC/data/{Dataset}/{LLM}/{VLM}.

@@ -1,0 +1,14 @@
+You will be provided a list of [__LEN__] locations where person exists and the number of occurences in a given dataset. Your job is to cluster [__LEN__] words into [__NUM_CLASSES_CLUSTER__] categories. Provide your answer as a list of [__NUM_CLASSES_CLUSTER__] words, each word representing a location. 
+
+For example, if the input is given as "{'a': 15, 'b': 25, 'c': 17}", it means that the label 'a', 'b', and 'c' appeared 15, 25, 17 times in the data, respectively. 
+
+When categorizing classes, consider the following criteria:
+
+1. Each cluster should have roughly the same number of images.
+2. Merge clusters with similar meanings.
+3. Each cluster should not have multiple classes of different locations.
+4. Each cluster represents a general location and should not be too specific.
+
+Now you will be given a list of locations and the number of classes, and the list of classes you answered previously.
+
+Please output a list of locations of length [__NUM_CLASSES_CLUSTER__], in the following format: "{index}: {location}". Make sure that you strictly follow the length condition, which means that {index} must range from 1 to [__NUM_CLASSES_CLUSTER__].

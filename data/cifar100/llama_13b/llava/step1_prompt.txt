@@ -1,0 +1,1 @@
+Provide a brief description of the main object in the given image. Focus on the main object.

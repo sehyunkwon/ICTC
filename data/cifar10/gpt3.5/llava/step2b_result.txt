@@ -1,0 +1,29 @@
+Answer 1: dog
+Reason 1: The word "dog" and its variations appear most frequently in the dataset, indicating a large category of dogs.
+
+Answer 2: horse
+Reason 2: The word "horse" and its variations also appear very frequently, suggesting a large category of horses.
+
+Answer 3: bird
+Reason 3: The word "bird" and its variations are common in the dataset, indicating a large category of birds.
+
+Answer 4: cat
+Reason 4: The word "cat" and its variations are quite frequent, suggesting a large category of cats.
+
+Answer 5: airplane
+Reason 5: The word "airplane" and its variations are common in the dataset, indicating a large category of airplanes.
+
+Answer 6: car
+Reason 6: The word "car" and its variations appear often in the dataset, suggesting a large category of cars.
+
+Answer 7: boat
+Reason 7: The word "boat" and its variations are quite frequent, indicating a large category of boats.
+
+Answer 8: deer
+Reason 8: The word "deer" and its variations appear often in the dataset, suggesting a large category of deers.
+
+Answer 9: truck
+Reason 9: The word "truck" and its variations are common in the dataset, indicating a large category of trucks.
+
+Answer10: frog 
+Reason10: The words 'frog' appears quite frequently ,indicating it as one among top ten categories.

@@ -1,0 +1,29 @@
+Answer 1: dog
+Reason 1: The category "dog" is chosen because it has the highest occurrence in the dataset. This category can include all types of dogs and related terms.
+
+Answer 2: airplane
+Reason 2: The category "airplane" is chosen because it has a high occurrence in the dataset. This category can include all types of airplanes and related terms.
+
+Answer 3: car
+Reason 3: The category "car" is chosen because it has a high occurrence in the dataset. This category can include all types of cars and related terms.
+
+Answer 4: horse
+Reason 4: The category "horse" is chosen because it has a high occurrence in the dataset. This category can include all types of horses and related terms.
+
+Answer 5: bird
+Reason 5: The category "bird" is chosen because it has a high occurrence in the dataset. This category can include all types of birds and related terms.
+
+Answer 6: boat
+Reason 6: The category "boat" is chosen because it has a high occurrence in the dataset. This category can include all types of boats and related terms.
+
+Answer 7: deer
+Reason 7: The category "deer" is chosen because it has a high occurrence in the dataset. This category can include all types of deers and related terms.
+
+Answer 8: cat
+Reason 8: The category "cat" is chosen because it has a high occurrence in the dataset. This category can include all types of cats and related terms.
+
+Answer 9: truck
+Reason 9: The category "truck" is chosen because it has a high occurrence in the dataset. This category can include all types of trucks and related terms.
+
+Answer 10: frog
+Reason 10:The category "frog" is chosen because it has a relatively higher occurrence compared to other objects left on the list, this could also cover similar amphibians or reptiles.

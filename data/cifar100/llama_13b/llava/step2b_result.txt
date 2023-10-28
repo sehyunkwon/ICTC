@@ -1,0 +1,20 @@
+Answer 1: animal
+Answer 2: bird
+Answer 3: fish
+Answer 4: mammal
+Answer 5: reptile
+Answer 6: insect
+Answer 7: plant
+Answer 8: flower
+Answer 9: fruit
+Answer 10: vehicle
+Answer 11: furniture
+Answer 12: building 
+Answer 13: electronic device 
+Answer 14: kitchen utensil 
+Answer 15: clothing item 
+Answer 16: toy 
+Answer 17: musical instrument 
+Answer 18: sports equipment 
+Answer 19: natural landscape
+Answer 20: human
