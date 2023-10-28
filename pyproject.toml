@@ -3,9 +3,8 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "llava"
-version = "1.0.1"
-description = "Towards GPT-4 like large language and visual assistant."
+name = "ictc"
+description = "Image Clustering Conditioned on Text Criteria"
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
@@ -29,8 +28,8 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://llava-vl.github.io"
-"Bug Tracker" = "https://github.com/haotian-liu/LLaVA/issues"
+"Homepage" = "https://github.com/sehyunkwon/ICTC"
+"Bug Tracker" = "https://github.com/sehyunkwon/ICTC/issues"
 
 [tool.setuptools.packages.find]
 exclude = ["assets*", "benchmark*", "docs", "dist*", "playground*", "scripts*", "tests*"]
