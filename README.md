@@ -174,3 +174,10 @@ Classic metrics used in clustering literature.
 ```
 python ictc/measuring_acc.py --dataset cifar10
 ```
+
+## Citation
+If you feel IC|TC useful for your research and applications, please cite using this BibTeX:
+```
+@misc{
+}
+```
