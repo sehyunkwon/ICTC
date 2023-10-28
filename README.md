@@ -1,5 +1,20 @@
 # IC|TC: Image Clustering Conditioned on Text Criteria
 *New methodology for performing image clustering based on user-specified criteria in the form of text by leveraging modern Vision-Language Models and Large Language Models.*
+![Sample images from the clustering results on the Stanford 40 Action dataset. Each result is obtained using a different text criterion: Action, Location, and Mood.](./figures/fig1_action.pdf)
+
+![Sample images from the clustering results on the Stanford 40 Action dataset. Each result is obtained using a different text criterion: Action, Location, and Mood.](./figures/fig1_location.pdf)
+
+![Sample images from the clustering results on the Stanford 40 Action dataset. Each result is obtained using a different text criterion: Action, Location, and Mood.](./figures/fig1_mood.pdf)
+
+---
+
+![Sample images from the clustering results on the PPMI dataset using the text criterion Instrument with different cluster numbers K=2 and 7.](./figures/fig1_instrument_2.pdf)
+
+![Sample images from the clustering results on the PPMI dataset using the text criterion Instrument with different cluster numbers K=2 and 7.](./figures/fig1_instrument_7.pdf)
+
+---
+
+**Caption**: Sample images from clustering results of IC|TC. The method finds clusters consistent with the user-specified text criterion. Furthermore, the method provides cluster names (texts above each image cluster) along with the clusters, enhancing the interpretability of clustering results.
 
 ## News
 
