@@ -144,7 +144,7 @@ cd ~/ICTC/scripts
 Assuming the current directory is **~/ICTC**.
 
 #### **1. Obtain image description from VLM** (Step 1)
-Image descriptions will be saved in **'./{dataset}/initial_answer.jsonl'**.
+Image descriptions will be saved in **'./{dataset}/{llm}/{vlm}/step1_result.jsonl'**.
 ```
 python step1/llava/eval/model.py --dataset cifar10
 or
