@@ -1,10 +1,10 @@
 # IC|TC: Image Clustering Conditioned on Text Criteria
 *New methodology for performing image clustering based on user-specified criteria in the form of text by leveraging modern Vision-Language Models and Large Language Models.* [arXiv Link](https://arxiv.org/abs/2310.18297).
 
-## News
-- 🔥 Our paper will be presented at NeurIPS workshop on [R0-FoMo: Robustness of Few-shot and Zero-shot Learning in Foundation Models](https://sites.google.com/view/r0-fomo), 2023. See you there!
+## 📣 News
+- Our paper will be presented at NeurIPS workshop on [R0-FoMo: Robustness of Few-shot and Zero-shot Learning in Foundation Models](https://sites.google.com/view/r0-fomo), 2023. See you there!
 
-## Overview of ICTC
+## 📕 Overview of ICTC
 #### Sample images from clustering results of IC|TC
 Sample images from clustering results of IC|TC. The method finds clusters consistent with the user-specified text criterion. Furthermore, the method provides cluster names (texts above each image cluster) along with the clusters, enhancing the interpretability of clustering results.
 <div align="center">
@@ -35,12 +35,12 @@ IC|TC is very simple. All you need to do is input a text prompt reflecting the c
 
 (Step 1) VLM extracts detailed relevant textual descriptions of images. (Step 2) LLM identifies the names of the clusters. (Step 3) LLM conducts clustering by assigning each description to the appropriate cluster. The entire procedure is guided by a user-specified text criterion ($\mathbf{TC}$). (Optional $\mathbf{TC}$ Refinement). The user can update the text criterion if the clustering results are unsatisfactory. 
 
-## Contents
+## 📖 Contents
 - [Install](#install)
 - [Dataset Prep](#dataset-prep)
 - [Usage](#usage)
 
-## Install
+## 💾 Install
 
 1. Clone this repository
 ```bash
@@ -56,7 +56,7 @@ pip install --upgrade pip  # enable PEP 660 support
 pip install -e .
 ```
 
-## Dataset Prep
+## 🔨 Dataset Prep
 This section explains how to prepare the images that we used. The images have to be in **.jpg**, **.JPEG**, or **.png** format (you can add more in **load_image_paths_from_folder** function from **models.py** file). The image names have to be in the following format: {IMG_NUMBER}_{CLASS_NAME}.{FORMAT}.
 
 ### MNIST
@@ -140,7 +140,7 @@ cd ~/ICTC/scripts
 ./2_categories.sh
 ```
 
-## Usage
+## 💻 Usage
 Assuming the current directory is **~/ICTC**.
 
 #### **1. Obtain image description from VLM** (Step 1)
@@ -176,7 +176,7 @@ Classic metrics used in clustering literature.
 python ictc/measuring_acc.py --dataset cifar10
 ```
 
-## Citation
+## 📌 Citation
 If you feel IC|TC useful for your research and applications, please cite using this BibTeX:
 ```
 @misc{kwon2023image,
