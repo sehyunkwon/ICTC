@@ -26,7 +26,7 @@ Sample images from clustering results of IC|TC. The method finds clusters consis
 <img src="./figures/fig1_instrument_7.png" alt="Sample images from the clustering results on the PPMI dataset. Clustering criterion is Instrument with cluster numbers K=2" width="700"/>
 </div>
 
-#### Pipeline of ICTC
+#### Pipeline of IC|TC
 IC|TC is very simple. All you need to do is input a text prompt reflecting the clustering criteria to the Vision Language Model (VLM) and Large Language Model (LLM) at each step.
 
 <div align="center">
