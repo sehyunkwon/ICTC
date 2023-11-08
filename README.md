@@ -4,7 +4,7 @@
 ## 📣 News
 - Our paper will be presented at NeurIPS workshop on [R0-FoMo: Robustness of Few-shot and Zero-shot Learning in Foundation Models](https://sites.google.com/view/r0-fomo), 2023. See you there!
 
-## 📕 Overview of ICTC
+## 📕 Overview of IC|TC
 #### Sample images from clustering results of IC|TC
 Sample images from clustering results of IC|TC. The method finds clusters consistent with the user-specified text criterion. Furthermore, the method provides cluster names (texts above each image cluster) along with the clusters, enhancing the interpretability of clustering results.
 <div align="center">
