@@ -2,6 +2,7 @@
 *New methodology for performing image clustering based on user-specified criteria in the form of text by leveraging modern Vision-Language Models and Large Language Models.* [arXiv Link](https://arxiv.org/abs/2310.18297).
 
 ## 📣 News
+- Our paper is accepted in ICLR'24. See you in Vienna!
 - Our paper will be presented at NeurIPS workshop on [R0-FoMo: Robustness of Few-shot and Zero-shot Learning in Foundation Models](https://sites.google.com/view/r0-fomo), 2023. See you there!
 
 ## 📕 Overview of IC|TC
