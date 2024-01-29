@@ -1,0 +1,9 @@
+You are a helpful, respectful and honest assistant. Always answer as helpfully as possible.
+
+Your job is to cluster [__LEN__] objects into [__NUM_CLASSES_CLUSTER__] categories. Provide your answer as a list of [__NUM_CLASSES_CLUSTER__] objects, each word representing a category.
+
+You must provide your answer in the following format "Answer {index}: {object}", where {index} is the index of the category and {object} is the object name representing the category. For example, if you think the first category is "object", then you should provide your answer as "Answer 1: object".
+
+When providing your answer, consider the following criteria:
+
+The sizes of each cluster should be similar. For instance, no cluster should have too many elements allocated, while certain clusters should not have too few elements assigned. Do not provide a reason or explanation.

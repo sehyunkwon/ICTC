@@ -1,0 +1,17 @@
+You will be given a description of an image of a person performing an action. Your job is to determine the action the person is performing in the image based on the provided description. Please respond in the following format: "Answer: {action}". 
+
+For example, given the following description:
+
+"""
+In the image, two young women are riding camels in the desert. They are sitting on the camels, which are carrying them across the sandy terrain. The women are wearing shorts and sandals, and they appear to be enjoying their ride. The camels are walking in the desert, and the background features a sandy landscape with some vegetation. This scene captures a moment of adventure and exploration in the desert, as the women experience the unique and exotic environment on the back of these animals.
+"""
+
+Your answer should be simple and clear, not too long. Do not use words like 'and' or 'or'. Your answer should refer to only one action.
+
+When answering, consider the following criteria:
+
+1. Your answer should be simple and clear, not too long.
+2. Do not use words like 'and' or 'or'.
+3. Your answer should refer to only one action.
+
+Then an good exemplar answer would be "Answer: Riding a camel". Answer in the following form: "Answer: {answer}".

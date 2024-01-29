@@ -2,8 +2,35 @@ import os
 import re
 import torch
 import random
-from argument import args
-from hungarian_match import hungarian_evaluate, confusion_matrix
+from tqdm import tqdm
+
+from utils.argument import args
+from utils.hungarian_match import hungarian_evaluate, confusion_matrix
+
+import nltk
+from nltk.corpus import wordnet as wn
+nltk.download('wordnet')
+
+
+def find_most_similar(word, word_list):
+    best_word = None
+    highest_similarity = -1
+
+    # Ensure the word has synsets
+    word_synsets = wn.synsets(word)
+    if not word_synsets:
+        return random.choice(word_list)
+
+    for w in word_list:
+        for syn in wn.synsets(w):
+            for word_syn in word_synsets:
+                similarity = word_syn.path_similarity(syn)
+                if similarity and similarity > highest_similarity:
+                    highest_similarity = similarity
+                    best_word = w
+
+    return best_word
+
 
 def extract_class(file_name):
     match = re.search(r'(\d+)_(.+)\.jpg', file_name)
@@ -18,23 +45,37 @@ def extract_class(file_name):
 
 if __name__ == "__main__":
     confusion_matrix_save_path = f"{args.exp_path}/confusion_matrix.pdf"
-    file_names = os.listdir(args.image_folder)
-    true_classes = [extract_class(file_name) for file_name in file_names if extract_class(file_name) is not None]
-    print(true_classes)
+    file_path = args.step3_result_path
+    true_classes = []
+
+    with open(file_path, 'r') as file:
+        for line in file:
+            if '.png' in line:
+                before_png = line.split('.png')[0]
+                name = before_png.split('_')[-1]
+                true_classes.append(name)
+            else:
+                before_jpg = line.split('.jpg')[0]
+                name = before_jpg.split('_')[-1]
+                true_classes.append(name)
+
+    unique_elements = list(set(true_classes))
 
     # load final answers and classes
     final_classes = []
     final_answers = []
-    with open(args.classification_result_path, 'r') as result_file:
+    with open(args.step3_result_path, 'r') as result_file:
         file_read = result_file.readlines()
         # post_process
         for answer in file_read:
             try:
-                final_answers.append(answer.split(":")[1].strip().lower())
+                answer = answer.split(":")[1].strip().lower()
+                answer = answer.replace(",", "").replace("'", "").replace(".", "")
+                final_answers.append(answer)
             except:
                 final_answers.append(answer)
 
-    with open(args.clustering_result_path, 'r') as result_file:
+    with open(args.step2b_result_path, 'r') as result_file:
         file_read = result_file.readlines()
         for label in file_read:
             if "Reason" not in label and label.strip() != "" and ":" in label:
@@ -42,16 +83,14 @@ if __name__ == "__main__":
 
     final_answers_ = []
     wrong_num = 0
-    for i in range(len(final_answers)):
+    for i in tqdm(range(len(final_answers))):
         if final_answers[i] in final_classes:
             final_answers_.append(final_answers[i])
         else:
-            most_similar_word = random.choice(final_classes)
+            most_similar_word = find_most_similar(final_answers[i], final_classes)
             final_answers_.append(most_similar_word)
-            print(final_answers[i], most_similar_word)
             wrong_num += 1
     final_answers = final_answers_
-    print('Wrong Assigned: ', wrong_num)
 
     """
     Hungarian matching (Assignment problem)

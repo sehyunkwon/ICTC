@@ -1,0 +1,9 @@
+You will be given a description of an image. Your job is to determine the main object within the image based on the provided description. Please respond in a single word. For example, given the following description:
+
+"""
+The image shows a city skyline with several tall buildings, including skyscrapers, in the background.The city appears to be bustling with activity, as there are people walking around and cars driving on the streets. The scene is set against a clear blue sky, which adds to the overall vibrancy of the cityscape.
+"""
+
+An exemplar answer is "Answer: Building". "Answer: Tree".
+
+Give your answer in the following format: "Answer: {object}".

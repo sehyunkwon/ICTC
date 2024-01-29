@@ -37,12 +37,9 @@ parser.add_argument("--gpt_top_p", type=float, default=0.9)
 parser.add_argument("--frequency_penalty", type=float, default=0.5)
 parser.add_argument("--presence_penalty", type=float, default=0.5)
 
-# LlaMa-2
-parser.add_argument("--llama", type=str2bool, default=False)
-parser.add_argument("--llama_ver", type=str, default="llama_7b", choices = ["llama_7b", "llama_13b", "llama_70b"])
-
-# LLaVa only
-parser.add_argument("--llava_only", type=str2bool, default=False)
+# Llama-2
+parser.add_argument("--llama", type=str2bool, default=True)
+parser.add_argument("--llama_ver", type=str, default="llama_70b_chat_hf", choices = ["llama_7b", "llama_13b", "llama_70b", "llama_70b_chat_hf"])
 
 # whether to use gpt4 for labeling process
 parser.add_argument("--use_gpt4", type=str2bool, default=False)
@@ -84,7 +81,7 @@ elif args.dataset == "ppmi":
         args.image_folder += "2_classes/"
 elif args.dataset == "stanford-40-actions":
     args.image_folder += "stanford-40-actions/JPEGImages/"
-    if args.cl_criteria == "actions":
+    if args.cl_criteria == "action":
         args.num_classes = 40
 
 # Step 1 Datadirs
@@ -149,10 +146,10 @@ else:
     args.exp_path += f"/gpt3.5/"
 
 if args.dataset == "ppmi":
-    args.exp_path += f"{args.num_classes}_classes_"
+    args.exp_path += f"{args.num_classes}_classes/"
 
 if args.dataset == "stanford-40-actions":
-    args.exp_path += f"{args.cl_criteria}_{args.num_classes}_classes_"
+    args.exp_path += f"{args.cl_criteria}_{args.num_classes}_classes/"
 
 args.exp_path += f"{args.exp_name}"
 

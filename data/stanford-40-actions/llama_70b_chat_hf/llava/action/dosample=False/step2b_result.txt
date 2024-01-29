@@ -1,0 +1,40 @@
+1: Walking
+2: Running
+3: Jumping
+4: Climbing
+5: Fishing
+6: Riding a bicycle
+7: Riding a horse
+8: Playing the violin
+9: Cooking
+10: Writing
+11: Reading
+12: Talking on the phone
+13: Playing the guitar
+14: Waving
+15: Throwing a frisbee
+16: Reading a book
+17: Shooting a bow and arrow
+18: Repairing a bicycle
+19: Feeding a horse
+20: Using a cell phone
+21: Gardening
+22: Playing guitar
+23: Drinking
+24: Washing dishes
+25: Rowing
+26: Pushing a shopping cart
+27: Watching television
+28: Cutting down a tree
+29: Studying
+30: Using a laptop
+31: Walking a dog
+32: Petting a horse
+33: Looking through a telescope
+34: Changing a tire
+35: Stirring a pot
+36: Feeding
+37: Taking a picture
+38: Talking on a cell phone
+39: Typing
+40: Teaching
