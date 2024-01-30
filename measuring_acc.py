@@ -82,14 +82,17 @@ if __name__ == "__main__":
                 final_classes.append(label.split(":")[1].strip().lower())
 
     final_answers_ = []
-    wrong_num = 0
+
     for i in tqdm(range(len(final_answers))):
         if final_answers[i] in final_classes:
             final_answers_.append(final_answers[i])
         else:
-            most_similar_word = find_most_similar(final_answers[i], final_classes)
+            if args.llama:
+                most_similar_word = find_most_similar(final_answers[i], final_classes)
+            else:
+                most_similar_word = random.choice(final_classes)
             final_answers_.append(most_similar_word)
-            wrong_num += 1
+
     final_answers = final_answers_
 
     """

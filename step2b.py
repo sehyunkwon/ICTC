@@ -59,13 +59,15 @@ if __name__ == "__main__":
     # post process gpt_labels.txt
     answer_list = post_process()
 
-    # threshold
-    if args.num_classes == 20:
-        threshold = 35
+    if args.llama:
+        # threshold
+        if args.num_classes == 20:
+            threshold = 35
+        else:
+            threshold = 30
+        answer_list = dict(sorted({k: v for k, v in answer_list.items() if v > threshold}.items(), key=lambda item: item[1], reverse=True))
     else:
-        threshold = 30
-
-    answer_list = dict(sorted({k: v for k, v in answer_list.items() if v > threshold}.items(), key=lambda item: item[1], reverse=True))
+        answer_list = {k: v for k, v in answer_list.items() if v > 15}
     print("Post-processed dictionary: ",answer_list)
     
     
