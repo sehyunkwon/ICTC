@@ -185,12 +185,11 @@ python ictc/measuring_acc.py --dataset cifar10
 ## 📌 Citation
 If you feel IC|TC useful for your research and applications, please cite using this BibTeX:
 ```
-@misc{kwon2023image,
-      title={Image Clustering Conditioned on Text Criteria}, 
-      author={Sehyun Kwon and Jaeseung Park and Minkyu Kim and Jaewoong Cho and Ernest K. Ryu and Kangwook Lee},
-      year={2023},
-      eprint={2310.18297},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{
+kwon2024ictc,
+title={Image Clustering Conditioned on Text Criteria},
+author={Sehyun Kwon and Jaeseung Park and Minkyu Kim and Jaewoong Cho and Ernest K. Ryu and Kangwook Lee},
+journal={International Conference on Learning Representations},
+year={2024}
 }
 ```
