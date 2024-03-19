@@ -139,7 +139,7 @@ mkdir 12_classes
 mkdir 7_classes
 mkdir 2_categories
 cd ~/ICTC/scripts
-cp * ~/data/ppmi./12_classes
+cp * ~/data/ppmi/12_classes
 cp *_Saxophone.jpg *_Guitar.jpg *_Trumpet.jpg *_Cello.jpg *_Flute.jpg *_Violin.jpg *_Harp.jpg ./7_classes
 cp ./7_classes/* ./2_categories
 cd ~/ICTC/scripts
